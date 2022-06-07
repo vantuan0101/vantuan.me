@@ -1,0 +1,43 @@
+
+@import "./core/variable";
+@import "./core/mixin";
+@import "./core/function";
+@import "./page/header";
+@import "./page/intro";
+@import "./page/product";
+@import "./page/cursor";
+@import "./page/swiper";
+@import "./page/loader";
+@import "./page/infor";
+@import "./page/modal";
+
+body{
+    margin: 0;
+    &::-webkit-scrollbar {
+	  	width: 4px;
+	}
+	&::-webkit-scrollbar-track {
+	 	 background: black;
+	}
+	&::-webkit-scrollbar-thumb {
+	  	background: #2b2b2b; 
+	}
+    
+}  
+.main{
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    
+}
+html{
+    &::-webkit-scrollbar {
+	  	width: 4px;
+	}
+	&::-webkit-scrollbar-track {
+	 	 background: black;
+	}
+	&::-webkit-scrollbar-thumb {
+	  	background: #2b2b2b; 
+	}
+}

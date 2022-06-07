@@ -1,0 +1,56 @@
+.loader{
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    z-index: 1000;
+    display: flex;
+    justify-content : center;
+    align-items :center;
+    flex-direction: column;
+    overflow: hidden;
+    pointer-events: none;
+    &>div{
+        font-size: 18px;
+        font-family: 'fdprimary',sans-serif;
+        // line-height: 15px;
+        color: #fff;
+        text-transform: uppercase;
+        font-weight: normal;
+        letter-spacing: 10px;
+        mix-blend-mode: difference;
+        white-space: nowrap;
+        opacity: 0;
+    }
+    &__hello{
+        animation: show 2s linear;
+        animation-delay: 1s;
+    }
+    &__name{
+        animation: show 5s linear ;
+        animation-delay: 3s;
+        
+    }
+    
+}
+
+
+@keyframes show{
+    0%{
+        opacity: 0;
+    }
+    30%{
+        opacity: 0.6;
+    }
+    50%{
+        opacity: 1;
+    }
+    
+    100%{
+        opacity: 1;
+
+    }
+    
+
+}

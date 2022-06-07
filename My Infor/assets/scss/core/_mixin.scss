@@ -1,0 +1,36 @@
+// MIXINS
+@mixin desktop-large{
+	@media (max-width: 1400px){
+		@content;
+	}
+}
+@mixin desktop{
+	@media(min-width: 1024px){
+		@content;
+	}
+}
+@mixin tablet{
+	@media screen and (min-width: 740px) and (max-width:1024px){
+		@content;
+	}
+}
+@mixin mobile{
+	@media screen and (max-width: 740px){
+		@content;
+	}
+}
+
+
+
+@mixin min-width($args){
+	@media(min-width: $args){
+		@content;
+	}
+}
+
+//
+@mixin tableMobile(){
+	@media(min-width: 760px){
+		@content;
+	}
+}

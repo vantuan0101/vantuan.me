@@ -1,0 +1,35 @@
+// body {
+//   background-color: #1d1d1d;
+//   margin: 0;
+//   padding: 0;
+// }
+
+.text-slo {
+  // display: flex;
+  // height: 50vh;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  & h1 {
+    // max-width: 75%;
+    font-size: 100px;
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    color: #540032;
+    @include mobile{
+      font-size: 34px;
+    }
+    @include tablet{
+      font-size: 55px;
+    }
+  }
+  & .title {
+    background-image: url(https://cdn.pixabay.com/photo/2018/04/23/15/00/blind-stretch-comb-3344475_1280.jpg);
+    background-attachment: fixed;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+  }
+}
+
+

@@ -1,0 +1,43 @@
+.infor {
+  width: 100%;
+  display: block;
+  &__contain {
+    width: 80%;
+    margin: 100px auto;
+    margin-top: 150px;
+  }
+  &__avt {
+    width: 200px;
+    height: 200px;
+    margin: 10px auto;
+    &-img {
+      border-radius: 50%;
+
+      width: 100%;
+    }
+  }
+  &__i4 {
+    color: $white-color;
+    text-align: center;
+    font-family: "fsecond" ,sans-serif;
+    margin-top: 20px;
+    font-size: 30px;
+    @include mobile{
+      font-size: 25px;
+    }
+    &-name{
+      margin-bottom: 20px;
+      & > span{
+        @include mobile{
+          display: flex;
+          justify-content: center;
+        }
+      }
+    }
+    
+    &-dsc {
+      margin: 5px 0;
+    }
+    
+  }
+}

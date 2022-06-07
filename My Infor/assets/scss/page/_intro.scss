@@ -1,0 +1,91 @@
+.intro {
+  width: 100%;
+  min-height: 100vh;
+  text-align: center;
+  position: relative;
+  mix-blend-mode: difference;
+  margin-bottom: 70px;
+
+  &__contain {
+    position: absolute;
+    top: 65%;
+    transform: translateY(-50%);
+    left: 0;
+    height: 100%;
+    pointer-events: none;
+    padding: 0 $pd25;
+    @include mobile() {
+      padding: 0;
+      width: 100%;
+    }
+
+    &-text {
+      font-family: "fsecond", sans-serif;
+      color: $text-white-color;
+      margin: 5px 0;
+      width: 100%;
+      animation: fadeInUp 2s linear;
+      @include mobile() {
+        font-size: calc(3.1vw + 3.1vh);
+        line-height: calc(5.2vw + 5.2vh);
+      }
+      @include tablet() {
+        font-size: calc(4vw + 4vh);
+        line-height: calc(5vw + 5vh);
+      }
+      @include desktop() {
+        font-size: calc(3.3vw + 3.3vh);
+        line-height: calc(5.8vw + 5.8vh);
+      }
+    }
+  }
+  &__more {
+    position: absolute;
+    left: 50%;
+    bottom: -28px;
+    width: 3px;
+    border-left: 2px solid $white-color;
+    overflow: hidden;
+    animation: fadeInDown 1s linear;
+    animation-iteration-count: infinite;
+    @include mobile() {
+      height: 83px;
+      bottom: 40px;
+    }
+
+    @include tablet() {
+      height: 93px;
+      bottom: 30px;
+    }
+    @include desktop() {
+      height: 93px;
+    }
+  }
+}
+
+.special__text {
+  text-shadow: rgb(238 29 82 / 80%) 3px 3px 0px,
+    rgb(105 201 208 / 80%) 3px 4px 0px;
+}
+
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, -50%, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translateZ(0);
+  }
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, 100%, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translateZ(0);
+  }
+}
